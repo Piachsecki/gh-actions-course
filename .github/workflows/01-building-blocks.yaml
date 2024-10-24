@@ -1,4 +1,4 @@
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 name: "01 - Building Blocks"
 
 

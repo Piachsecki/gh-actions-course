@@ -1,0 +1,7 @@
+colors:
+  - name: red
+    hex: ff0000
+    labels:
+     - experimental
+     - different
+  
