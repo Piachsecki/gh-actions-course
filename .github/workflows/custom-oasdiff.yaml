@@ -14,6 +14,6 @@ jobs:
         - name: Running OpenAPI Spec diff action
           uses: oasdiff/oasdiff-action/breaking@main
           with:
-            base: https://raw.githubusercontent.com/APIprotector/ApiSpecRetriever/refs/heads/master/API%20Specki/Kubernetes/swagger_2025-03-25.json
+            base: https://raw.githubusercontent.com/APIprotector/ApiSpecRetriever/refs/heads/master/API%20Specki/Kubernetes/swagger_2024-05-20.json
             revision: https://raw.githubusercontent.com/APIprotector/ApiSpecRetriever/refs/heads/master/API%20Specki/Kubernetes/swagger_2025-03-26.json
   
