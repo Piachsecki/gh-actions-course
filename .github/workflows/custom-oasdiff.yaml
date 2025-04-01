@@ -1,6 +1,6 @@
 name: 03 - Workflow Runners
 on: 
-  workflow_run:
+  workflow_dispatch:
   push:
 
 jobs:
