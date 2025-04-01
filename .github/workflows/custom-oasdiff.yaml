@@ -1,0 +1,19 @@
+name: 03 - Workflow Runners
+on: 
+  workflow_run:
+  push:
+
+jobs:
+  ubuntu-echo:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Show OS
+          run: | 
+               echo "This job is running on an Ubuntu runner." 
+               echo "${{runner.os}}}"
+        - name: Running OpenAPI Spec diff action
+          uses: oasdiff/oasdiff-action/breaking@main
+          with:
+            base: https://raw.githubusercontent.com/APIprotector/ApiSpecRetriever/refs/heads/master/API%20Specki/Kubernetes/swagger_2025-03-26.json
+            revision: https://raw.githubusercontent.com/APIprotector/ApiSpecRetriever/refs/heads/master/API%20Specki/Kubernetes/swagger_2025-03-25.json
+  
